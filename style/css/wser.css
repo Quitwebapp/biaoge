@@ -1,0 +1,193 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-decoration:none;
+}
+#nev1{  background-color: rgba(30,144,255,0.8); }
+#nev2{	background-color: rgba(220,20,60,0.8); }
+#nev3{	background-color: rgba(50,200,200,0.8); }
+#nev4{	background-color: rgba(40,205,50,0.8); }
+#nev5{	background-color: rgba(255,150,0,0.8); }
+#nev6{	background-color: rgba(255,69,0,0.8); }
+#nev7{	background-color: rgba(85,85,85,0.8); }
+
+#name1{ color:rgba(30,144,255,1.0); }
+#name2{ color:rgba(220,20,60,1.0); }
+#name3{ color:rgba(50,200,200,1.0); }
+#name4{ color:rgba(40,205,50,1.0); }
+#name5{ color:rgba(255,150,0,1.0); }
+#name6{ color:rgba(255,69,0,1.0); }
+#name7{ color:rgba(85,85,85,1.0); }
+
+.wser{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	top: 0;
+	border: 0;
+	left: 0;
+	right: 0;
+	/*position: absolute;*/
+	position:fixed;
+	z-index: 100;
+	background-color: rgba(100,100,100,.5);
+}
+.browser{
+	width: 80%;
+	height: 80%;
+	margin: 5% 10%;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 2px solid rgba(255,255,255,1);
+	box-shadow: 0 15px 30px -10px rgba(50,50,50,.9);
+	padding: 0px;
+}
+
+.bigbrowser{
+	width: 100%;
+	height: 100%;
+	margin: 0%;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 2px solid rgba(255,255,255,1);
+	box-shadow: 0 15px 30px -10px rgba(50,50,50,.9);
+	padding: 0px;
+}
+.wser-top{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	border-radius: 5px 5px 0 0;
+	background-color: rgba(30,144,255,0.8);
+}
+.wser-top-name{
+	height: 40px;
+	margin: 5px 0 0 5px ;
+	line-height: 35px;
+	padding: 0 20px 0 0;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	background-color: #fff;
+	max-width: 80%;
+}
+.wser-top-name img{
+	margin:5px 5px 0 5px; width: 25px;
+}
+.wser-top-name tt{
+	font-size: 17px;
+	color: #000000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.wser-top-close{
+	display: flex;
+	margin-right: 5px;
+}
+.wser-top-close li{
+	width: 45px;
+	height: 40px;
+	line-height: 40px;
+}
+.wser-top-close img{
+	width: 25px;
+	margin:5px 10px;
+}
+.wser-top-close li:hover {background-color: rgba(100,100,100,.2);}
+.wser-url img:hover,.wser-nev li:hover{background-color: rgba(100,100,100,.2);border-radius: 5px;}
+.wser-url{
+	width: 100%;
+	display: flex;
+}
+.wser-url div{display: flex;}
+.wser-url li{
+	width: 35px;
+	height: 40px;
+	line-height: 40px;
+}
+.wser-url img{
+	width: 25px;
+	margin:5px 5px;
+}
+.wser-so{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	display: flex;
+	border: none;
+}
+.wser-so input{
+	width: 100%;
+	background-color: rgba(100,100,100,.1);
+	border-radius:50px;
+	padding-left: 10px;
+	border: none;
+	height: 30px;
+	margin: 5px 0;
+}
+.wser-so option,.wser-so select{
+	border: none;
+	height: 30px;
+	margin: 5px 0;
+	border-radius: 50px 0 0 50px;
+	background-color: rgba(100,100,100,.1);
+}
+.wser-nev{	display: flex;}
+.wser-nev li{
+	display: flex;
+	height: 25px;
+	line-height: 25px;
+	background-color: rgba(200,200,200,.1);
+	border-radius: 50px;
+	margin: 0 0 5px 10px;
+	padding:0 5px;
+}
+.wser-mian{
+	position: relative;
+	height: 100%;
+	border: none;
+	overflow:overlay;
+	border-radius: 0 0 10px 10px;
+}
+.wser-mian iframe{
+	width: 100%;
+	height: 100%;
+}
+.div-wser-iframe{
+	position: absolute;  
+	top: 0;  
+	left: 0;  
+	right: 0;  
+	bottom: 40px; 
+	overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+.browser img{ width: 25px;}
+
+@media (max-width:840px) {
+    .browser{
+	    width: 90%;
+	    height: 90%;
+	    margin: 5% 5%;
+    }
+}
+@media (max-width:500px) {
+    .browser{
+	    width: 95%;
+	    height: 90%;
+	    margin: 5% 2%;
+    }
+    div .wser-url-sz{
+        display: none;
+    }
+    dialog{
+		width: 95%;
+		height: 95%;
+	}
+}

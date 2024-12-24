@@ -1,0 +1,372 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body,#app{
+	width: 100%;
+	height: auto;
+}
+body{
+    background-image: url('https://xn--kwrr8v.top/style/image/bag.png');
+}
+#app{
+	/* background: url(../image/back.png)center no-repeat; */
+	background-size: cover;
+	position: relative;
+	/* position: fixed; */
+}
+
+.top-and-so{
+	width: 100%;
+	height: 280px;
+	background: url(https://彪哥.top/index/img/wb-bj.jpg)center no-repeat;
+	background-size: cover;
+	display: flex;    
+	flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+}
+
+.top{
+	display: flex;
+	position: relative;
+	height: 55px;
+	white-space: nowrap;
+	background-color: rgba(250,250,250,.9);
+}
+.top > .logo > img{
+	width: auto;
+	height: 45px;
+	padding:5px 15px;
+}
+.top > .title > h2{
+	font-family: serif;
+	font-weight: 1000;
+	font-size: 18px;
+	padding: 0 10px;
+}
+.top > .topnev{
+	width: 100%;
+	display: flex;
+	overflow-x: auto;
+}
+.top > .topnev > dd{
+	padding: 0 10px;
+}
+
+.topnev{
+	line-height: 55px;
+}
+.topnev > dd > ul{
+	display: none;
+	position: absolute;
+	height: auto;
+	top: 55px;
+	z-index: 99;
+	border-radius: 0 0 10px 10px;
+	border: 1px solid #dddddd;
+	background-color: rgba(255,255,255,.9);
+	border-top: none;
+	box-shadow: 0 5px 30px -10px rgba(50,50,50,.6);
+	max-width: auto;
+	min-width: 100px;
+}
+.topnev > dd > h3,a{
+	color:#000000;
+}
+.topnev > dd > ul > li{
+	padding:0 8px;
+	text-align: center;
+	border-radius: 10px;
+}
+.topnev > dd > ul > li:hover{
+	background-color: #ffffff;
+}
+.topnev-dd:hover{
+	background-color: rgba(150,150,150,.2);
+}
+
+.topnev-dd:hover .topnev-ul{
+	display: block;
+}
+.top > .logon{
+	background-color: rgba(250,250,250,1);
+	position: absolute;
+	top: 5px;
+	border: 5px;
+	right: 0px;
+	padding: 0 10px;
+}
+.top > .logon img{
+	width: 45px;
+	height: 45px;
+    border-radius: 8px;
+}
+
+.titlename{
+	width: 100%;
+	text-align: center;
+}
+.titlename h1{
+	width: auto;
+    letter-spacing:5px;
+	white-space: nowrap;
+	font-size: 38px;
+	-webkit-text-stroke: 1px rgba(100,100,100,.7);
+	text-shadow: 2px -2px 5px black;
+	color: #fff;
+	font-weight: 600;
+}
+.so{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	justify-content: center;
+	padding-top: 20px;
+	position: relative;
+}
+.so-input{
+	width: 70%;
+	margin: 0 auto;
+	height: 45px;
+	padding: 0 15px;
+	min-width: 250px;
+	max-width: 500px;
+	border-radius: 8px;
+	display: flex;
+	background-color: hsla(0,0%,100%,.85);
+}
+.so-li{
+	width: 100%;
+}
+.so-input input{
+	background-color: transparent;
+	outline: 0;
+	color: #000000;
+	font-size: 17px;
+	border:none;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin: 2px 0;
+}
+.so-input img{
+	width: 23px;
+	height: 23px;
+	margin: 12px 5px;
+}
+.viwemsg{
+	z-index: 999;
+	position: absolute;
+	width: 70%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 0 15px;
+	min-width: 250px;
+	max-width: 500px;
+	text-align: left;
+	background-color: rgba(250,250,250,1);
+	line-height: 28px;
+	border-radius: 5px;
+	border: 1px solid #eeeeee;
+	height: auto;
+	max-height: 60vh;
+	overflow-y: auto;
+	font-size: 18px;
+	font-weight: 680;
+	box-shadow: 0 5px 30px -10px rgba(50, 50, 50, .6);
+}
+
+.viwemsg > dd{
+	width: 100%;
+	overflow-x: auto;
+	white-space: nowrap;
+	display: flex;
+}
+.viwemsg > dd :hover{
+	transform: scale(1.01);
+}
+.viwemsg dd > a > tt{
+	padding-left: 25px;
+	color:#800;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: serif;
+}
+
+
+
+
+.main-nev{
+	width: 100%;
+	height: 100%;
+	min-height: 800px;
+}
+.nev-type-name{
+	display: flex;
+/* 	line-height: 45px; */
+}
+.nev-type-name b{
+	margin: 7px;
+	padding: 3px 10px;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	background-color: rgba(250,20,60,0.8);
+}
+.nev-type-name li{
+	width: auto;
+	line-height: 40px;
+	font-size: 15px;
+	color: #000000;
+	letter-spacing:1px;
+	text-overflow: ellipsis;
+}
+.nev-li{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+.nev-a{
+	width: 300px;
+	height: 60px;
+	padding: 2% 2%;
+	overflow: hidden;
+	background-color: rgba(255,255,255,.9);
+	border: 1px solid rgba(100,100,100,0.1);
+	transition: transform 750ms;
+}
+.nev-a:hover{
+	border-radius: 5px;
+	box-shadow: 0 5px 30px -10px rgba(50,50,50,.6);
+	transform: scale(1.03);
+}
+.nev-a a{
+	display: flex;
+}
+.nevinfo li{
+	color: rgba(30,144,255,0.8);
+	font-size: 20px;
+    overflow: hidden;
+}
+.nevinfo tt{
+	font-size: 12px;
+    color: #888888;
+    overflow: hidden;
+    height: 30px;
+    overflow: auto;
+    /* white-space: nowrap; */
+    line-height: 15px;
+    text-overflow: ellipsis;
+}
+.nevinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.nev-pic{
+	width: auto;
+	height: 100%;
+	text-align: center;
+}
+.nev-pic span{
+    color: #fff;
+	width: auto;
+	height: 100%;
+	min-height: 50px;
+	line-height: 60px;
+	margin: auto 0;
+	font-size: 28px;
+    padding: 4px 8px;
+    border-radius: 8px;
+	background-color: rgba(30,144,255,0.8);
+	font-family: dingmao;
+}
+.nev-type {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.nev-type-name li{ color: #888888; }
+
+/* ----- */
+/* 悬挂 */
+.susp{
+	position: absolute;
+	right: 5px;
+/* 	height: 80%; */
+	width: 35px;
+	border-radius: 10px;
+	background-color: rgba(100,100,100,.3);
+	text-align: center;
+	align-items: center;
+	padding: 10px 0;
+}
+.susp i{
+	width: 35px;
+	font-size: 24px;
+	color: #fff;
+	padding: 5px 0;
+	margin: 2px 1px;
+}
+.susp i:hover{
+	border-radius: 8px;
+	background-color: rgba(255,255,255,.3);
+}
+
+/* 底部 */
+.bottom{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    justify-content: center;
+    color: rgba(0,20,50,.4);
+	bottom: 0;
+	padding: 10px 0;
+}
+.bottom a{color: rgba(0,20,50,.4);}
+@media (max-width:799px) {
+    .nev-a{
+		display: flex;
+        align-items: center;
+		width: 180px;
+		height: 75px;
+		padding: 10px;
+	}
+    
+}
+
+@media (max-width:599px) {
+	.nev-a{
+		display: flex;
+        align-items: center;
+		width: 150px;
+		height: 80px;
+		padding: 10px;
+	}
+	.logo{
+		display: none;
+	}
+	.top-and-so{
+		width: 100%;
+		height: 200px;
+		background-size: cover;
+	}
+	.top > .topnev{
+		padding-right: 65px;
+	}
+	.topnev > dd > ul{
+	    right: 0;
+        left: 0;
+	}
+}

@@ -1,421 +1,120 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="Robots" content="All" />
-		<meta http-equiv='content-language' content='zh-CN'>
-		<link rel="shortcut icon" href="//彪哥.top/index/img/logo.ico" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="360-site-verification" content="de2cfb414d569741551cbd8c4b0b901c" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-		<meta http-equiv="windows-Target" content="_top" />
-		<meta name="revisit-after" content="1 days" />
-		<meta name="Distribution" content="Global" />
-		<meta name="Author" content="xy88888@88.com" />
-		<meta itemprop="name" content="彪哥.TOP | 导航网">
+<head>
+	<meta charset="utf-8" />
+	<title>彪哥.TOP 导航网</title>
+	<meta name="Robots" content="All" />
+	<meta name="Distribution" content="Global" />
+	<meta name="revisit-after" content="1 days" />
+	<meta name="Author" content="xy88888@88.com" />
+	<meta http-equiv="windows-Target" content="_top"/>
+	<meta itemprop="name" content="彪哥.TOP | 导航网">
+	<meta http-equiv='content-language' content='zh-CN'>
+    <meta itemprop="image" content="index/img/logo.ico">
+	<link rel="shortcut icon" href="style/image/logo.ico"/>
+	<meta name="Coptright" content="Created By 彪哥.top" />
+	<meta name="description" content="专业导航与技术博客站点" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="360-site-verification" content="de2cfb414d569741551cbd8c4b0b901c" /><meta name="keywords" content="彪哥.top,TOP·博客,简域云盘,网络2101,导航,学习笔记,TOPblog,TOP博客" />
         <meta itemprop="description" content="专业导航与技术博客站点,包含TOP博客、图片收集表、简域云盘、聊天室">
-        <meta itemprop="image" content="index/img/logo.ico">
-		<meta name="Coptright" content="Created By 彪哥.top" />
-		<meta name="description" content="专业导航与技术博客站点" />
-		<meta name="keywords" content="彪哥.top,TOP·博客,简域云盘,网络2101,导航,学习笔记,TOPblog,TOP博客" />
-		<link rel="stylesheet" type="text/css" href="//彪哥.top/index/css/element-ui2.15.13.css"/>
-		<link rel="stylesheet" type="text/css" href="//彪哥.top/index/css/index.css?v=68">
-		<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.4.2/vue.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="//彪哥.top/index/js/element-ui.js" type="text/javascript" charset="utf-8"></script>
-		<script src="//彪哥.top/index/js/time.js" type="text/javascript" charset="utf-8"></script>
-		<title>彪哥.TOP | 导航网</title>
-		<style>#app{display:none}</style>
-	</head>
-	<body>
-		<div id="app" :style="index" style="backdrop-filter: blur(0px); ">
-			<el-container>
-				<el-header id="top">
-					<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
-						<el-menu-item index="0">
-							<a href="#" target="_top">
-								<img src="//彪哥.top/index/img/logo.png" alt="logo" id="logo-img">
-							</a>
-						</el-menu-item>
-						
-						<el-menu-item index="1">首页</el-menu-item>
-
-						<el-submenu index="2" id="fns-sub">
-							<template slot="title">校内导航</template>
-							<el-menu-item index="2-1">
-							    <a href="http://xggl.hnqczy.com/index" target="_blank">学工处</a>
-							</el-menu-item>
-							<el-menu-item index="2-2">
-							    <a href="http://cas.hnqczy.com:8002/cas/login?service=http://218.75.206.107:8008/study/shiro-cas" target="_blank">智课堂</a>
-							</el-menu-item>
-							<el-menu-item index="2-3">
-							    <a href="http://www.hnqczy.com/Index.html" target="_blank">湖汽职院官网</a>
-							</el-menu-item>
-							<el-menu-item index="2-4">
-							    <a href="//彪哥.top/web2101" target="_blank">网络2101导航</a>
-							</el-menu-item>
-						</el-submenu>
-
-						<el-menu-item index="3" id="fns-sub"><a href="//彪哥.top/wp" target="_blank">简域云盘</a></el-menu-item>
-
-						<el-menu-item index="4" id="fns-sub"><a href="//彪哥.top/note" target="_blank">TOP·博客</a></el-menu-item>
-
-						<el-submenu index="5" id="fns-sub">
-							<template slot="title">w.子网站</template>
-							<el-menu-item index="5-0">
-							    <a href="//www.xn--kwrr8v.top/edu/word/" target="_blank">Word Online</a>
-							</el-menu-item>
-							<el-menu-item index="5-0">
-							    <a href="//彪哥.top/zsb/" target="_blank">专升本信息开放</a>
-							</el-menu-item>
-							<el-menu-item index="5-1">
-							    <a href="//彪哥.top/w/010.html" target="_blank">运动步数</a>
-							</el-menu-item>
-							<el-menu-item index="5-2">
-							     <a href="//彪哥.top/w/1503.html" target="_blank">1503歌单</a>
-						    </el-menu-item>
-						        
-							<el-menu-item index="5-3">
-							    <a href="//彪哥.top/w/dz/" target="_blank">湖汽单招</a>
-							</el-menu-item>
-							<el-menu-item index="5-4">
-							    <a href="//彪哥.top/web2101/app" target="_blank">网络2101App</a>
-							</el-menu-item>
-							<el-menu-item index="5-5">
-							     <a href="//彪哥.top/w/10/" target="_blank">红旗头像制作</a>
-							</el-menu-item>
-							<el-menu-item index="5-6">
-							     <a href="//彪哥.top/w/xck/" target="_blank">行程卡纪念版</a>
-							</el-menu-item>
-							<el-menu-item index="5-10">
-							     <a href="//彪哥.top/w" target="_blank">更多站点</a>
-							</el-menu-item>
-						</el-submenu>
-
-						<el-submenu index="6" id="fns-sub">
-							<template slot="title">更多服务</template>
-							
-							<el-menu-item index="6-0">
-							    <a href="//彪哥.top/w/仿手写" target="_blank">仿手写生成</a>
-							</el-menu-item>
-							<el-menu-item index="6-1">
-							    <a href="//彪哥.top/login/?t=图片收集表&w=../upfile" target="_blank">图片收集表</a>
-							</el-menu-item>
-							<el-menu-item index="6-2">
-							    
-							    <a href="//彪哥.top/msg" target="_blank">TOP留言板</a>
-							</el-menu-item>
-							<el-menu-item index="6-3">
-							    <a href="//彪哥.top/wb" target="_blank">个人主页</a>
-							</el-menu-item>
-							<el-menu-item index="6-6">
-							    <a href="//彪哥.top/admin/upg.php" target="_blank"> 创作者中心</a>
-							   
-							</el-menu-item>
-							<el-menu-item index="6-7">
-							    <a href="//彪哥.top/wb/index.html?#bottom" target="_blank">资助我们</a>
-							</el-menu-item>
-							<el-menu-item index="6-7">
-							    <a href="//彪哥.top/game" target="_blank">网页小游戏</a>
-							</el-menu-item>
-							<el-submenu index="6-8">
-								<template slot="title">网页小游戏</template>
-								<el-menu-item index="6-8-1">
-								    <a href="//彪哥.top/game/" target="_blank">全部小游戏</a>
-								</el-menu-item>
-								<el-menu-item index="6-8-2">
-								    <a href="//彪哥.top/game/25" target="_blank">2048合成(排行榜)</a>
-								</el-menu-item>
-								<el-menu-item index="6-8-3">
-								    <a href="//彪哥.top/game/65/index.html" target="_blank">中国象棋</a>
-								</el-menu-item>
-								<el-menu-item index="6-8-4">
-								    <a href="//彪哥.top/game/72/index.html" target="_blank">欢乐斗地主</a>
-								</el-menu-item>
-								<el-menu-item index="6-8-9">
-								    <a href="//彪哥.top/game/" target="_blank">小游戏首页</a>
-								</el-menu-item>
-							</el-submenu>
-						</el-submenu>
-							<el-menu-item index="10" id="fns-sub"><a href="//www.彪哥.top/" target="_blank">体验新版</a></el-menu-item>
-
-						<el-menu-item index="7" id="fns-lis">
-							<el-dropdown>
-								<span class="el-dropdown-link">
-								  <img id="list-tb" src="https://xn--kwrr8v.top/upfile/img/gd.png" alt="下拉列表">
-								  <!-- <i class="el-icon-menu el-icon--right"></i> -->
-								</span>
-								<el-dropdown-menu slot="dropdown">
-								  <el-dropdown-item><a href="//彪哥.top/web2101" target="_blank">校内导航</a></el-dropdown-item>
-								  <el-dropdown-item divided><a href="//彪哥.top/wp" target="_blank">简域云盘</a></el-dropdown-item>
-								  <el-dropdown-item divided><a href="//彪哥.top/note" target="_blank">TOP·博客</a></el-dropdown-item>
-								  <el-dropdown-item divided><a href="//彪哥.top/w" target="_blank">w.子网站</a></el-dropdown-item>
-								  <el-dropdown-item divided><a href="//彪哥.top/upfile" target="_blank">图片收集表</a></el-dropdown-item>
-								</el-dropdown-menu>
-							  </el-dropdown>
-						</el-menu-item>
-					</el-menu>
-				</el-header>
-				
-				<el-container id="mains">
-					<el-aside id="msg-left">
-						<!-- 时间日期 -->
-						<a href="https://www.彪哥.top"><button type="button">体验新版</button></a>
-                        <div id="left-time">
-							<div onload="time()" id="time1">
-								<b></b><span id="time2">时间</span><br></b><!-- 时间 -->
-								<span id="time4">日期</span><!-- 日期 -->
-							</div>
-						</div>
-						
-						<div id="he-plugin-simple"></div>
-						
-						<div id="text-msg" style="padding: 2.5%;" class="logon-div">
-						    <a :href="logona">
-							<div class="logon">
-								<div id="imgtx"  v-html="qqtx">
-									<img src="https://www.彪哥.top/style/image/login.png" >
-								</div>
-								<div id="userinfo">
-									<li><b v-text="username">Logon</b></li>
-									<li><tt v-text="qqnum">请先登录帐号</tt></li>
-								</div>
-							</div>
-							</a>
-						</div>
-						
-						<!-- 一言 -->
-						<div id="text-msg">
-							<ul id="msg-yiyan">
-								<li id="text-yiyan" v-text="yiyan"></li>
-								<li id="text-yiyan-span" @click="yiyan_open()">网易云热评</li>
-							</ul>
-						</div>
-						
-						<!-- TOP·博客 -->
-						<div id="text-msg">
-							<a target="_blank" :href="notefid" id="msg-note-a">
-								<img src="//彪哥.top/note/img/neto.png" alt="note"/>
-								<ul id="msg-note">
-									<li id="note-title"><b v-text="notetitle"></b></li>
-									<li id="note-msg" v-text="notemsg"></li>
-								</ul>
-							</a>
-						</div>
-						<!-- IP与区域 -->
-						<div id="text-msg">
-							<ul id="msg-ips">
-								<li id="text-ips"><b>IP地址 ：</b> {{ ips }} </li>
-								<li id="text-ips"><b>区  域 ： </b> {{ adds }} </li>
-							</ul>
-						</div>
-
-						<!-- 站内通知公告 -->
-						<div id="text-msg">
-							<ul id="tz-msg-ul" v-html="tzmsg">
-							</ul>
-						</div>
-						
-						<!-- 访问量 -->
-						<div id="text-msg">
-							<div id="msg-fangwen">
-								<ul class="zt-ul">
-									<li class="zt-li">今日访问量</li>
-									<li class="zt-li" id="zt-li" v-text="meips"></li>
-								</ul><hr>
-								<ul class="zt-ul">
-									<li class="zt-li">本站总访问量</li>
-									<li class="zt-li" id="zt-li" v-text="sumips"></li>
-								</ul>
-							</div>
-						</div>
-					</el-aside>
-					<el-main id="msg-right">
-					    <marquee direction="left" width="100%" height="auto" bgcolor="" scrollamount="4" style="color:#fff;font-size:14px;" >感谢 M-、halseysss、
-					    懒羊羊.、滴滴滴、是小席丫、嘎嘎困、森林、T、墨宸灏、Chaque instant.、陆壹陆、嘿嘿嘿、小涵不减肥、M-、羽客、小眼镜想长胖、Nemophilist、After Rain、.、Few words、墨宸灏、初阳、涂涂、...、聆听雨的声音.、perhaps.ᶠʸ、给你一笔兜、dfffgffg、罒㉨罒、.、烟雨、LO对彪哥.TOP的捐赠</marquee>
-					    
-						<div id="so">
-						        <el-input placeholder="请输入搜索内容" v-model="wb" class="input-with-select">
-    								<el-select v-model="so" slot="prepend" placeholder="搜索引擎">
-    									<el-option label="Bing" value="https://cn.bing.com/search?q="></el-option>
-    								  	<el-option label="百度" value="https://www.baidu.com/s?ie=utf-8&wd="></el-option>
-    								  	<el-option label="360" value="https://www.so.com/s?ie=utf-8&q="></el-option>
-    									  <el-option label="头条搜索" value="https://so.toutiao.com/search?dvpf=pc&source=input&keyword="></el-option>
-    									<el-option label="抖音搜索" value="https://www.douyin.com/search/"></el-option>
-    									<el-option label="书目百科" value="http://book.cppinfo.cn/so/home/qhsearch?q="></el-option>
-    									
-    									<el-option label="网盘资源" value="https://www.alipansou.com/search?k="></el-option>
-    									<el-option label="本站检索" value="https://xn--kwrr8v.top/note/so.php?s=1&q="></el-option>
-    								</el-select>
-    								<el-button slot="append" icon="el-icon-search"  @click="openget()"></el-button>
-    								
-    							</el-input>
-							
-						</div>
-					    <div id="fns">
-							<div id="fns-kuaisu" >
-								<div id="nav">
-								    <a href="//www.彪哥.top/" target="_blank">
-										<span id="n2">彪</span>
-										<div id="name">体验新版<sup style="color:#f55;">new</sup></div>
-									</a>
-									<a href="http://i.chaoxing.com/" target="_blank">
-										<span id="n1">通</span>
-										<div id="name">学习通</div>
-									</a>
-									<a href="https://note.youdao.com/web" target="_blank">
-										<span id="n3">道</span>
-										<div id="name">有道云笔记</div>
-									</a>
-									<a href="https://auth.huaweicloud.com/authui/login.html?locale=zh-cn&service=https%3A%2F%2Factivity.huaweicloud.com%2F1111_promotion%2Findex.html%3Futm_source%3Dbaidu%26utm_medium%3Dse-cpc-op%26utm_campaign%3D%26utm_content%3D%26utm_term%3D%25E5%258D%258E%25E4%25B8%25BA%25E4%25BA%2591%25E6%259C%258D%25E5%258A%25A1%25E4%25BC%2598%25E6%2583%25A0%26utm_adplace%3DAdPlace067493%26bd_vid%3D11326783042509382269#/login" target="_blank">
-										<span id="n6">华</span>
-										<div id="name">华为云平台</div>
-									</a>
-									<a href="https://www.csdn.net/" target="_blank">
-										<span id="n5">Cs</span>
-										<div id="name">CSDN</div>
-									</a>
-									<a href="http://www.douyin.com/?enter=guide" target="_blank">
-										<span id="n1">抖</span>
-										<div id="name">抖音</div>
-									</a>
-									<a href="http://www.bilibili.com/" target="_blank">
-										<span id="n6">哩</span>
-										<div id="name">哔哩哔哩</div>
-									</a>
-									<a href="https://yiyan.baidu.com/" target="_blank">
-										<span id="n3">AI</span>
-										<div id="name">文心一言</div>
-									</a>
-
-									<a href="//彪哥.top/note" target="_blank">
-										<span id="n4">记</span>
-										<div id="name">学习笔记</div>
-									</a>
-									
-									<a href="//www.xn--kwrr8v.top/edu/word/" target="_blank">
-										<span id="n6">W</span>
-										<div id="name">Word Online</div>
-									</a>
-									</div>
-								</div>
-							</div>
-							
-							<div id="fns-kuaisu" style="margin-top: 15px;">
-								<div id="nav">
-									<a href="https://e.huawei.com/cn/talent/portal/#/" target="_blank">
-										<span id="n3">华</span>
-										<div id="name">华为认证HC</div>
-									</a>
-									<a href="http://ntce.neea.edu.cn/" target="_blank">
-										<span id="n4">资</span>
-										<div id="name">中小学教资</div>
-									</a>
-									<a href="https://bm.ruankao.org.cn/sign/welcome" target="_blank">
-										<span id="n2">软</span>
-										<div id="name">计算机软考</div>
-									</a>
-									<a href="https://cet.neea.edu.cn/" target="_blank">
-										<span id="n6">英</span>
-										<div id="name">英语四级考</div>
-									</a>
-									<a href="http://shekao.hneao.cn/cet/" target="_blank">
-										<span id="n1">应</span>
-										<div id="name">英语应用A级</div>
-									</a>
-									<a href="https://ncre.neea.edu.cn/" target="_blank">
-										<span id="n2">计</span>
-										<div id="name">计算机等级考</div>
-									</a>
-									<a href="https://zsb.hneao.cn/ks" target="_blank">
-										<span id="n4">本</span>
-										<div id="name">湖南专升本</div>
-									</a>
-									
-									<a href="https://bm.cltt.org/#/index" target="_blank">
-										<span id="n3">普</span>
-										<div id="name">普通话测试</div>
-									</a>
-									<a href="https://www.chsi.com.cn/" target="_blank">
-										<span id="n5">学</span>
-										<div id="name">学信网</div>
-									</a>
-
-									<a href="https://www.redhat.com/zh/services/certification/rhce" target="_blank">
-										<span id="n6">红</span>
-										<div id="name">红帽认证RH</div>
-									</a>
-									
-									<a href="https://learningnetwork.cisco.com/s/cn-cln" target="_blank">
-										<span id="n7">思</span>
-										<div id="name">思科认证CH</div>
-									</a>
-									
-									<a href="https://www.hneeb.cn/hnxxg/792/795/index.htm" target="_blank">
-										<span id="n4">湖</span>
-										<div id="name">湖南考试信息</div>
-									</a>
-									
-									<!--<a href="https://cy.ncss.cn/" target="_blank">-->
-									<!--	<span id="n5">创</span>-->
-									<!--	<div id="name">大学生创业</div>-->
-									<!--</a>-->
-									
-									</div>
-								</div>
-							<div id="wifi">
-							    <div id="wifi-div">
-							    	<div id="wb-div">
-										<div id="wifi-title-div"><span id="wifi-title">微博热搜榜</span></div>
-							    		<ul id="wb-ul" v-html="wbwifis"></ul>
-							    	</div>
-							    	
-									<div id="qqmusic-div">
-										<div id="wifi-title-div"><span id="wifi-title">QQ音乐热歌榜</span></div>
-										<ul id="dy-ul" v-html="qqmusicwifis"></ul>
-									</div>
-									
-									<div id="dy-div">
-										<div id="wifi-title-div"><span id="wifi-title">网易云音乐热歌榜</span></div>
-										<ul id="dy-ul" v-html="dywifis"></ul>
-									</div>
-									
-									<div id="ls-div">
-										<div id="wifi-title-div"><span id="wifi-title">历史上的今天(<t id="timejintian"></t>)</span></div>
-										<ul id="ls-ul" v-html="lswifis"></ul>
-									</div>
-							    </div>
-							</div>
-							
-							</div>
-						</div>
-					</el-main>
-				</el-container>
-				<el-footer id="bottom">
-					Copyright © 2019-2024 彪哥.TOP. All rights reserved. 
-					<a href="https://beian.miit.gov.cn/" target="_blank">
-						ICP备案编号 - 湘ICP备2022007847号
-					</a></el-footer>
-			</el-container>			
+	<script src="./style/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="./style/css/element-ui.css">
+	<link rel="stylesheet" href="./style/css/animate.min.css" />
+	<link rel="stylesheet" href="./style/css/index.css?v=15" />
+	<link rel="stylesheet" href="./style/css/wser.css?v=2" />
+	<script src="./style/js/element-ui.js"></script>
+	<script src="./style/js/axios.min.js"></script>
+</head>
+<body>
+<div id="app">
+	<div class="top">
+		<div class="logo">
+			<img src="style/image/toplogo.png" alt="logo"/>
 		</div>
-    	<script src="//彪哥.top/index/js/axios.min.js" type="text/javascript" charset="utf-8"></script>
-    	<script src="//彪哥.top/index/js/index.js?v=59" type="text/javascript" charset="utf-8" async></script>
-    	<script src="//彪哥.top/index/js/md5.min.js" type="text/javascript" charset="utf-8"></script>
-    	<script src="//彪哥.top/index/js/js-xh.js?v=5" type="text/javascript" charset="utf-8"></script>
-    	<!--<script src="top/style/js/guanggao.js?v=4" type="text/javascript" charset="utf-8"></script>-->
-    	<script>
-    	WIDGET = {
-          "CONFIG": {
-            "modules": "01423","background": "1","tmpColor": "FFFFFF","tmpSize": "18","cityColor": "FFFFFF","citySize": "16","aqiColor": "FFFFFF","aqiSize": "16","weatherIconSize": "24","alertIconSize": "18",
-            "padding": "20px 5px 20px 5px","shadow": "0","language": "auto","borderRadius": "10","fixed": "true",
-            "vertical": "top","horizontal": "left","city": "CN101250304","left": "220","top": "100","z-index":"100","key": "087e88c6ede4461bb9cf342edfc22ae5"
-          }
-        }
-        </script>
-        <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
-        <script>
-            document.oncontextmenu=new Function("event.returnValue=false"); 
-            document.onselectstart=new Function("event.returnValue=false"); 
-        </script>
-	</body>
+		<div class="topnev">
+		<dd v-for="(i,j) in topdata" class="topnev-dd">
+			<a :href="j=='TOP博客'?'/note/':(j=='简域云盘'?'/wp/':null)" target="_blank"><h3 v-text="j"></h3></a>
+			<ul v-if="i.info[1]>=2"  class="topnev-ul">
+				<li v-for="(x,y) in i" v-if="y!=='info'" @click="open(x)" v-html="y"></li>
+			</ul>
+		</dd>
+		</div>
+		<div class="logon"> <div class="userpic" @click="logon"> <img :src="logonpic"/> </div></div>
+	</div>
+
+<div class="top-and-so">
+	<div class="so">
+		<div class="titlename  animated zoomIn"> <h1>TOP 导航网</h1> </div>
+		<div class="so animated zoomIn">
+			<div class="so-input">
+				<li class="so-li">
+				<input type="text" placeholder="请输入搜索关键词" aria-label="搜索" autofocus="" v-model="somsg" @keyup.enter="postso" @input="viewso">
+				</li>
+				<li v-if="somsg"><img src="style/image/mode.png" alt="超级搜索" @click="sosuper"/></li>
+				<li><img src="style/image/so.png" alt="搜索" @click="postso"/></li>
+			</div>
+			<ul v-if="searchResults" class="viwemsg">
+				<dd v-for="(x,y) in searchResults"> <a target="_blank" :href="x.url">{{ x.name }}<tt>{{ x.des }}</tt></a> </dd>
+			</ul>
+		</div>
+	</div>
+	<div class="susp">
+			<i class="el-icon-postcard" @click="drawer = true"></i>
+			<!-- <i class="el-icon-date"></i>
+			<i class="el-icon-cloudy-and-sunny"></i>
+			<i class="el-icon-headset"></i> -->
+	</div>
+</div>
+
+<el-drawer
+  title="今日热点"
+  :visible.sync="drawer"
+  direction="ltr"
+  size="50%"
+  :with-header="false">
+  <img style="width: 100%;height: auto;" src="https://zj.v.api.aa1.cn/api/60s-v2/?cc=%E5%BD%AA%E5%93%A5.top" alt="new" />
+</el-drawer>
+
+
+<div class="main-nev ">
+<div class="nev-list" v-for="(item,index) in nevdata">
+	<div class="nev-type">
+		<div class="nev-type-name">
+			<b :id="'nev'+item.info[2]" v-text="index"></b> 
+			<li v-text="item.info[3]"></li>
+		</div>
+	</div>
+	<div class="nev-li">
+		<div class="nev-a" v-for="(nev,echo) in item" v-if="echo !== 'info'"><a target="_blank" :href="nev[1]">
+			<div class="nevinfo">
+				<li :id="'name'+nev[2]" v-text="echo"></li> 
+				<tt v-text="nev[3]"></tt>
+			</div>
+			<div class="nev-pic"> <span :id="'nev'+nev[2]" v-text="nev[0]"></span> </div>
+			</a></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="bottom">Copyright © 2019-2025 彪哥.TOP. All rights reserved.<a href="https://beian.miit.gov.cn/" target="_blank">ICP备案编号 - 湘ICP备2022007847号</a></div>
+</div>
+<script src="./style/js/index.js?v=1716779496351" type="text/javascript" charset="utf-8"></script>
+<script>
+    console.log('\n\
+          ／＞　　フ\n\
+          | 　_　_|\n\
+　 　　　／` ミ＿xノ\n\
+　　 　 /　　　 　 |\n\
+　　　 /　 ヽ　　 ﾉ\n\
+　 　 │　　|　|　|\n\
+　／￣|　　 |　|　|\n\
+　| (￣ヽ＿_ヽ_)__)\n\
+　＼二つ彪哥.TOP，技术成就未来！\n\
+　————————————————————————————————\n\
+　加入我们:https://彪哥.top/job/'); 
+</script>
+</body>
 </html>
