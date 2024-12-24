@@ -2,6 +2,7 @@
 
 ## 介绍
 访问原网站# https://彪哥.top/  或者 https://www.xn--kwrr8v.top/
+![image](https://github.com/user-attachments/assets/8e7547e4-b20f-4b15-96ab-46d386cd3fb4)
 
 ## 软件功能
 支持搜索导航功能，匹配关键字与介绍关键字，毫秒级响应，多线程异步检索、支持其他站点搜索，今日新闻……
